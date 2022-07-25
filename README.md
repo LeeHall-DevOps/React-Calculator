@@ -1,7 +1,8 @@
 # React Calculator
 ---
 
-<img src="./Images/startinng-calc-img.jpg" width="100">
+<img src="./Images/startinng-calc-img.jpg" width="300">
+
 
 This is a full functional calculator made using:
 
