@@ -45,7 +45,7 @@ npm start
 6. adding hover and focus functionality
 
 <p align="center">
-<img src="./Images/Hover-button.gif" width="250"/>
+<img src="./Images/hover-button.gif" width="250"/>
 </p>
 
 7. adding number functions
