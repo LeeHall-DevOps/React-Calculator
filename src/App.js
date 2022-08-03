@@ -11,6 +11,7 @@ export const ACTIONS = {
   EVALUATE: 'evaluate',
 }
 
+// disabling more than one . or 0
 function reducer(state, { type, payload }) {
   switch(type) {
     case ACTIONS.ADD_DIGIT:
@@ -28,6 +29,7 @@ function reducer(state, { type, payload }) {
         currentOperand: `${state.currentOperand || ""}${payload.digit}`,
         
       }
+      // choosing operator logic
     case ACTIONS.CHOOSE_OPERATION:
       if (state.currentOperand == null && state.previousOperand == null) {
         return state
@@ -90,6 +92,7 @@ function reducer(state, { type, payload }) {
   }
 }
 
+// operator logic
 function evaluate({ currentOperand, previousOperand, operation}) {
   const prev = parseFloat(previousOperand)
   const current = parseFloat(currentOperand)
